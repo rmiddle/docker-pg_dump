@@ -1,7 +1,7 @@
-brunoluiz/pg_dump
+rmiddle/pg_dump
 ================
 
-Docker image with pg_dump running as a cron task. Find the image, here: https://hub.docker.com/r/brunoluiz/pg_dump/.
+Docker image with pg_dump running as a cron task. Find the image, here: https://hub.docker.com/r/rmiddle/pg_dump/.
 
 **⚠️ The actual container is using `pg_dump` from postgres 11**
 
@@ -45,5 +45,5 @@ docker run -ti --rm \
   -v /path/to/target/folder:/dump \   # where to put db dumps
   -e PREFIX=mybackup \
   --link my-postgres-container:db \   # linked container with running mongo
-  brunoluiz/pg_dump dump
+  rmiddle/pg_dump dump
 ```
