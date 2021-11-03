@@ -3,7 +3,7 @@ rmiddle/pg_dump
 
 Docker image with pg_dump running as a cron task. Find the image, here: https://hub.docker.com/r/rmiddle/pg_dump/.
 
-**⚠️ The actual container is using `pg_dump` from postgres 11**
+**⚠️ The actual container is using `pg_dump` from postgres 14**
 
 ## Usage
 
@@ -23,7 +23,7 @@ Attach a target postgres container to this container and mount a volume to conta
 Example:
 ```
 postgres-backup:
-  image: brunoluiz/pg_dump:11
+  image: rmiddle/pg_dump:latest
   links:
     - postgres
   environment:
